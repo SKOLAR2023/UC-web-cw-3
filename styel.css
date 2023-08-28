@@ -1,0 +1,55 @@
+h1{
+    font-family: monospace;
+    color: orange;
+
+}
+
+
+body{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+
+
+    display:flex
+
+}
+
+.container{
+    width: 500px;
+    justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+    display:flex
+ 
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+margin: 1px;
+border-radius: 10px;
+animation: myanim 0.5s infinite;
+border: 2px solid darkkhaki;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+.box:hover{
+animation-play-state: paused;
+
+}
+
+
+@keyframes myanim {
+    from {
+        background-color: teal;
+    }
+    to {
+        background-color: turquoise;
+    }
+}
